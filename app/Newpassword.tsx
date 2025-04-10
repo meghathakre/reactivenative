@@ -1,7 +1,7 @@
 import React from "react";
 import {Text, View, Image,TextInput,StyleSheet} from 'react-native';
 import { Link, useRouter } from 'expo-router';
-const PassRecovery=()=>{
+const Newpassword=()=>{
     const [text, onChangeText] = React.useState('');
   const [number, onChangeNumber] = React.useState('');
 
@@ -27,30 +27,30 @@ const PassRecovery=()=>{
                 fontSize:30,
               
             }}>
-                Password Recovery
+              Setup New password
             </Text>
             
             <Text>
-                How you would like to restore your password?</Text>
+                Please,setup a new password for your account</Text>
                 <View>
                 <TextInput
           style={styles.input}
           onChangeText={onChangeText}
           value={text}
-          placeholder="Sms"
+          placeholder="New password"
         />
         <TextInput
           style={styles.input}
           onChangeText={onChangeNumber}
           value={number}
-          placeholder="Email"
+          placeholder="Repeat password"
           keyboardType="numeric"
           
           
         />
             
             </View>
-<Link href={"/PassRecovery2"} style={{marginTop:25,backgroundColor:"blue",padding:10,paddingHorizontal:140,borderRadius:10,color:"white"}}>Next
+<Link href={"/lastrecover"} style={{marginTop:25,backgroundColor:"blue",padding:10,paddingHorizontal:140,borderRadius:10,color:"white"}}>Save
 </Link>
 <Text style={{margin:20}}>cancel</Text>
         </View>
@@ -68,4 +68,4 @@ const styles = StyleSheet.create({
     },
   });
 
-export default PassRecovery;
+export default Newpassword;

@@ -3,7 +3,7 @@ import {Text, View, Image} from 'react-native';
 import { Link, useRouter } from 'expo-router';
 
 const Index=()=>{
-  const router =useRouter();
+  // const router =useRouter();
    // router.navigate(/signup);
   return(
     <View style={{flex:1,justifyContent:"center",alignItems:"center"}}>

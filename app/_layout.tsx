@@ -1,5 +1,6 @@
 import React from'react';
-import { Stack } from 'expo-router';
+import { Stack, Tabs } from 'expo-router';
+
 
 const RootLayout=()=>{
   return(
@@ -10,8 +11,13 @@ const RootLayout=()=>{
     <Stack.Screen name="signup"/>
     <Stack.Screen name="password"/>
     <Stack.Screen name="passRecovery"/>
+    <Stack.Screen name="passRecovery2"/>
+    <Stack.Screen name="Newpassword"/>
+    <Stack.Screen name="lastrecover"/>
+    <Stack.Screen name="profile"/>
+    <Stack.Screen name="Homesection"/>
+
   
-    
     </Stack>
     
     </>
